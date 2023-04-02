@@ -9,18 +9,15 @@ Alternative Documentation:
 
 Our requirements are listed in `requirements.txt`
 
-* Unix is supported, but we mostly used Mac OS.
-* 64-bit Python 3.8.10 is the version we use (or later version can be used).
-* CUDA toolkit 11.1 or later.
+* Unix is supported.
+* 64-bit Python 3.7 is the version we use (or later version can be used).
 * Python libraries: see [requirements.txt](./requirements.txt) for exact library dependencies. You can use the following
   commands with Miniconda3 to create and activate your `graph_slepians` Python environment:
-    - `conda create -n "graph_slepians" python=3.8.13`
+    - `conda create -n "graph_slepians" python=3.7`
     - `conda activate graph_slepians`
     - `<PATH TO YOUR CONDA PYTHON EXEC> python -m pip install -r requirements.txt`
 
 * Docker users:
-    - Ensure you have correctly installed
-      the [NVIDIA container runtime](https://docs.docker.com/config/containers/resource_constraints/#gpu).
     - Use the [Dockerfile](./Dockerfile) to build an image with the required library dependencies.
 
 ## Acknowledgement
