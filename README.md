@@ -1,5 +1,7 @@
 # Graph Slepians and Fiddlers
 
+![bear](results/fig-signal-slep-filtered.png)
+
 Python version for [code](https://codeocean.com/capsule/5202042/tree). Other in-house [softwares](https://miplab.epfl.ch/index.php/software) are offered by the group. 
 Alternative Documentation: 
 
