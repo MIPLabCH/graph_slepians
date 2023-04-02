@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graph Slepians and Fiddlers &mdash; Graph Slepians 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Load Mesh" href="notebooks/main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Graph Slepians
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html">Load Mesh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html#Display">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html#Compute">Compute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slepian_python.html">slepian_python package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Graph Slepians</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Graph Slepians and Fiddlers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="graph-slepians-and-fiddlers">
+<h1>Graph Slepians and Fiddlers<a class="headerlink" href="#graph-slepians-and-fiddlers" title="Permalink to this heading"></a></h1>
+<p>Python version for <a class="reference external" href="https://codeocean.com/capsule/5202042/tree">code</a>. Other in-house <a class="reference external" href="https://miplab.epfl.ch/index.php/software">softwares</a> are offered by the group.
+Alternative Documentation:</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<p>Our requirements are listed in <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></p>
+<ul class="simple">
+<li><p>Unix is supported, but we mostly used Mac OS.</p></li>
+<li><p>64-bit Python 3.8.10 is the version we use (or later version can be used).</p></li>
+<li><p>CUDA toolkit 11.1 or later.</p></li>
+<li><p>Python libraries: see <a class="reference internal" href="#./requirements.txt"><span class="xref myst">requirements.txt</span></a> for exact library dependencies. You can use the following
+commands with Miniconda3 to create and activate your <code class="docutils literal notranslate"><span class="pre">graph_slepians</span></code> Python environment:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">&quot;graph_slepians&quot;</span> <span class="pre">python=3.8.13</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">graph_slepians</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;PATH</span> <span class="pre">TO</span> <span class="pre">YOUR</span> <span class="pre">CONDA</span> <span class="pre">PYTHON</span> <span class="pre">EXEC&gt;</span> <span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p></li>
+</ul>
+</li>
+<li><p>Docker users:</p>
+<ul>
+<li><p>Ensure you have correctly installed
+the <a class="reference external" href="https://docs.docker.com/config/containers/resource_constraints/#gpu">NVIDIA container runtime</a>.</p></li>
+<li><p>Use the <a class="reference internal" href="#./Dockerfile"><span class="xref myst">Dockerfile</span></a> to build an image with the required library dependencies.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="acknowledgement">
+<h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this heading"></a></h2>
+<p>Dimitri Van De Ville, Robin Demesmaeker, Maria Giulia Preti (2017) Graph Slepians [Source Code]. https://doi.org/10.24433/CO.30374eaf-4b20-4124-97f4-7cef4658c4fd</p>
+<p>Van De Ville, Dimitri, Robin Demesmaeker, and Maria Giulia Preti. “When Slepian Meets Fiedler: Putting a Focus on the Graph Spectrum”. IEEE Signal Processing Letters 24.7 (2017): 1001-1004</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This analysis sets is under developments</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html">Load Mesh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html#Display">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html#Compute">Compute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slepian_python.html">slepian_python package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="slepian_python.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slepian_python.html#module-slepian_python.eigen_laplacian">slepian_python.eigen_laplacian module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slepian_python.html#module-slepian_python.graph_slepian">slepian_python.graph_slepian module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slepian_python.html#module-slepian_python.mesh_plot">slepian_python.mesh_plot module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slepian_python.html#module-slepian_python">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="notebooks/main.html" class="btn btn-neutral float-right" title="Load Mesh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017, MIPLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

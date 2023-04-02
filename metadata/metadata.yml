@@ -1,0 +1,26 @@
+metadata_version: 1
+name: Graph Slepians
+description: The study of complex systems benefits from graph models and their analysis.
+  In particular, the eigendecomposition of the graph Laplacian lets emerge properties
+  of global organization from local interactions; e.g., the Fiedler vector has the
+  smallest non-zero eigenvalue and plays a key role for graph clustering. Graph signal
+  processing focusses on the analysis of signals that are attributed to the graph
+  nodes. The eigendecomposition of the graph Laplacian allows to define the graph
+  Fourier transform and extend conventional signal-processing operations to graphs.
+  Here, we introduce the design of Slepian graph signals, by maximizing energy concentration
+  in a predefined subgraph for a graph spectral bandlimit. We establish a novel link
+  with classical Laplacian embedding and graph clustering, which provides a meaning
+  to localized graph frequencies.
+authors:
+- name: Dimitri Van De Ville
+  affiliations:
+  - name: École Polytechnique Fédérale de Lausanne
+- name: Robin Demesmaeker
+  affiliations:
+  - name: École Polytechnique Fédérale de Lausanne
+- name: Maria Giulia Preti
+  affiliations:
+  - name: École Polytechnique Fédérale de Lausanne
+corresponding_contributor:
+  name: Dimitri Van De Ville
+  email: dimitri.vandeville@epfl.ch
