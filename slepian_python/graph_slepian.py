@@ -37,7 +37,7 @@ def compute_slepians(L, selection, NW, const_scale, maxiter=2500):
     basis_cut ::[list<1darray>]
     """
 
-    # Lapalacian Spectrum
+    # Laplacian Spectrum
     S1, Utr = eigsh(L, NW, which='SA', maxiter=maxiter)
     S1 = np.abs(S1)
     if const_scale:
@@ -46,7 +46,7 @@ def compute_slepians(L, selection, NW, const_scale, maxiter=2500):
         tmp_scale = 1
     S1 = S1/tmp_scale
 
-    # selcting index (e.g bear head)
+    # selecting index (e.g bear head)
     basis_contr = Utr[selection]
     C = (basis_contr.T @ basis_contr)
 
