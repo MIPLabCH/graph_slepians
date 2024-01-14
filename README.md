@@ -6,8 +6,6 @@ Python version for [code](https://codeocean.com/capsule/5202042/tree). Other in-
 
 [Alternative Documentation](https://graph-slepians.readthedocs.io/en/latest/)
 
-Note: The python porting is not official code from the author.
-
 ## Requirements
 
 Our requirements are listed in `requirements.txt`
